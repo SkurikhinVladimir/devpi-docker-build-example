@@ -42,7 +42,7 @@ services:
         TRUSTED_HOST: host.docker.internal
 ```
 
-### Dockerfile
+### Dockerfile для приложения
 ```dockerfile
 FROM python:3.9-slim
 
