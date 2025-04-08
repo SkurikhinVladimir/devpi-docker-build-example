@@ -9,10 +9,11 @@ COPY requirements.txt .
 
 # Устанавливаем зависимости
 ARG PIP_EXTRA_INDEX_URL
+ARG TRUSTED_HOST
 RUN pip install --no-cache-dir \
     -r requirements.txt \
     --extra-index-url ${PIP_EXTRA_INDEX_URL} \
-    --trusted-host host.docker.internal \
+    --trusted-host ${TRUSTED_HOST} \
     -v
 
 # Копируем остальные файлы проекта
