@@ -1,0 +1,6 @@
+langchain_community
+tqdm
+
+
+
+# langchain_community

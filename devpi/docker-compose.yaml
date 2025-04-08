@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  devpi-server:
+    image: jonasal/devpi-server:latest
+    container_name: devpi-server
+    ports:
+      - "3141:3141"
+    volumes:
+      - ./data-server:/data
+    environment:
+      - DEVPI_PASSWORD=password
